@@ -3,6 +3,7 @@ const app=express()
 const mongoose=require('mongoose')
 // const Product = require('./models/product.model.js')
 const ProductRoute=require('./routes/product.route.js')
+const loginRoute=require('./routes/login.route')
 // app.use(express())
 
 //middle ware
@@ -11,7 +12,7 @@ app.use(express.urlencoded({extended:true}))
 
 //routes
 app.use('/api/products',ProductRoute)
-
+app.use('/api/login',loginRoute)
 
 // app.get('/api/products',async(req,res)=>
 // {
