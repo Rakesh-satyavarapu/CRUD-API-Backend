@@ -29,7 +29,7 @@ app.use('/api/login',loginRoute)
 // app.get('/api/products/:id',async(req,res)=>
 // {
 //     try{
-//         let {id}=req.params()
+//         let {id}=req.params
 //         const product=await Product.findById(id)
 //         res.status(200).json(product)
 //     }
